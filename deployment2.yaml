@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: scenario2-deployment
+  labels:
+    app: scenario2-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: scenario2-deployment
+  template:
+    metadata:
+      labels:
+        app: scenario2-deployment
+    spec:
+      containers:
+      - name: scenario2-deployment
+        image: thethymca/python-flask-sample-app:v2
+        ports:
+        - containerPort: 5000
