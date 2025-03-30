@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: scenario3-deployment
+  labels:
+    app: scenario3-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: scenario3-deployment
+  template:
+    metadata:
+      labels:
+        app: scenario3-deployment
+    spec:
+      containers:
+      - name: scenario3-deployment
+        image: thethymca/example-javascript-website:v1
+        ports:
+        - containerPort: 80
