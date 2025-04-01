@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hs-service
+  labels:
+    app: my-sql
+spec:
+  ports:
+  - port: 3306
+    name: hs-service
+  clusterIP: None
+  selector:
+    app: hs-service
