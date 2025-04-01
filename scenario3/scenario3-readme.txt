@@ -10,7 +10,8 @@ In Kubernetes cluster, installed helm chart for nginx ingress controller using f
   kubectl apply -f service3.yaml 
   kubectl apply -f ingress3.yaml 
   kubectl get all
-Now we can access the application externally on our web-browser using External-ip address of the LoadBalancer from ingress-controller
+Now we can access the application externally on our web-browser using External-ip address of the LoadBalancer from ingress-controller:
+for example: http://104.155.142.82/test-path
 
 Deleting above installed manifests:
   kubectl delete -f  deployment3.yaml 
