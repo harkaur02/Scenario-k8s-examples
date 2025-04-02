@@ -10,4 +10,4 @@ spec:
     name: hs-service
   clusterIP: None
   selector:
-    app: hs-service
+    app: my-sql
