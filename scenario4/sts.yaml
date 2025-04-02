@@ -3,7 +3,7 @@ kind: StatefulSet
 metadata:
   name: my-sql
 spec:
-  serviceName: "my-sql"
+  serviceName: "hs-service"
   replicas: 2
   selector:
     matchLabels:
