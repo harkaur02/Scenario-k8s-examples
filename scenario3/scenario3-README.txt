@@ -1,6 +1,11 @@
 Scenario3: I want to expose an application externally. Check on the possibilities and provide a solution.
+Solution Scenario3: 
+There are two ways to expose an application externally:
+1. using LoadBalancer service
+2. using Ingress service
+I will be using type ingress to expose my app externally for this Scenario3 example.
 
-Solution:
+
 created deployment2.yaml, service3.yaml and ingress3 .yaml files
 In Kubernetes cluster, installed helm chart for nginx ingress controller using following commands:  
   helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
